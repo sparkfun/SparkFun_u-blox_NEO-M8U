@@ -1397,6 +1397,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
+<symbol name="V_BATT">
+<description>&lt;h3&gt;Battery Voltage Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="V_BATT" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
+<symbol name="VDD">
+<description>&lt;h3&gt;VDD Voltage Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="VDD" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="3.3V" prefix="SUPPLY">
@@ -1432,6 +1446,34 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Power supply symbol for a specifically-stated 5V source.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="V_BATT" prefix="SUPPLY">
+<description>&lt;h3&gt;Battery Voltage Supply&lt;/h3&gt;
+&lt;p&gt;Generic symbol for the battery input to a system.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="V_BATT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VDD" prefix="SUPPLY">
+<description>&lt;h3&gt;VDD Voltage Supply&lt;/h3&gt;
+&lt;p&gt;Positive voltage supply (traditionally for a CMOS device, D=drain).&lt;/p&gt;</description>
+<gates>
+<gate name="VDD" symbol="VDD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -19984,6 +20026,10 @@ The NEO-M8U may be installed in any position within the vehicle without configur
 <part name="GND17" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J6" library="SparkFun-Connectors" deviceset="CONN_04" device="1X04_NO_SILK"/>
 <part name="U$2" library="SparkFun-GPS" deviceset="U-BLOX_MEO-M8U" device=""/>
+<part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="V_BATT" device=""/>
+<part name="SUPPLY13" library="SparkFun-PowerSymbols" deviceset="V_BATT" device=""/>
+<part name="SUPPLY14" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
+<part name="SUPPLY15" library="SparkFun-PowerSymbols" deviceset="VDD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19997,12 +20043,11 @@ I2C pullups from bus</text>
 disable LEDs</text>
 <text x="22.86" y="20.32" size="1.778" layer="97" font="vector">Close jumper to
 enable SPI</text>
-<text x="215.392" y="104.14" size="1.778" layer="97" font="vector">CI160808-33NJ</text>
 <text x="166.624" y="11.176" size="2.54" layer="94" font="vector">Elias Santistevan</text>
 <text x="78.74" y="99.06" size="2.54" layer="94" font="vector">Headers</text>
 <text x="2.54" y="99.06" size="2.54" layer="94" font="vector">LEDs and Jumpers</text>
 <text x="149.86" y="116.84" size="2.54" layer="94" font="vector">Hot Start Battery</text>
-<text x="2.54" y="177.8" size="2.54" layer="94" font="vector">GPS: u-Blox NEO-M9N </text>
+<text x="2.54" y="177.8" size="2.54" layer="94" font="vector">GPS: u-Blox NEO-M8U</text>
 <wire x1="73.66" y1="106.68" x2="73.66" y2="0" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="40.64" y1="55.88" x2="43.18" y2="55.88" width="0.2032" layer="97" style="dashdot"/>
 <wire x1="43.18" y1="55.88" x2="48.26" y2="55.88" width="0.2032" layer="97" style="dashdot"/>
@@ -20027,6 +20072,7 @@ enable SPI</text>
 <wire x1="48.26" y1="20.32" x2="43.18" y2="20.32" width="0.2032" layer="97" style="dashdot"/>
 <wire x1="43.18" y1="43.18" x2="48.26" y2="43.18" width="0.2032" layer="97" style="dashdot"/>
 <wire x1="48.26" y1="43.18" x2="48.26" y2="40.64" width="0.2032" layer="97" style="dashdot"/>
+<text x="28.702" y="74.168" size="1.778" layer="97" font="vector">I2C</text>
 </plain>
 <instances>
 <instance part="JP31" gate="G$1" x="246.38" y="30.48" smashed="yes"/>
@@ -20098,9 +20144,7 @@ enable SPI</text>
 <attribute name="NAME" x="36.576" y="71.12" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="39.624" y="71.12" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="JP5" gate="G$1" x="30.48" y="78.74" smashed="yes" rot="R270">
-<attribute name="NAME" x="27.94" y="74.422" size="1.778" layer="95" font="vector"/>
-</instance>
+<instance part="JP5" gate="G$1" x="30.48" y="78.74" smashed="yes" rot="R270"/>
 <instance part="SUPPLY9" gate="G$1" x="30.48" y="86.36" smashed="yes">
 <attribute name="VALUE" x="30.48" y="89.154" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
@@ -20232,8 +20276,8 @@ enable SPI</text>
 <attribute name="VALUE" x="22.86" y="167.894" size="1.778" layer="96" font="vector" rot="MR0" align="bottom-center"/>
 </instance>
 <instance part="FB1" gate="G$1" x="218.44" y="93.98" smashed="yes">
-<attribute name="NAME" x="219.71" y="96.52" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="219.71" y="91.44" size="1.778" layer="96" font="vector" align="top-left"/>
+<attribute name="NAME" x="219.964" y="94.488" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="219.964" y="93.472" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
 <instance part="SUPPLY10" gate="G$1" x="124.46" y="96.52" smashed="yes">
 <attribute name="VALUE" x="124.46" y="99.314" size="1.778" layer="96" font="vector" align="bottom-center"/>
@@ -20281,6 +20325,18 @@ enable SPI</text>
 <instance part="U$2" gate="G$1" x="48.26" y="147.32" smashed="yes">
 <attribute name="NAME" x="35.56" y="165.608" size="1.778" layer="95"/>
 <attribute name="VALUE" x="35.56" y="124.46" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY12" gate="G$1" x="177.8" y="88.9" smashed="yes">
+<attribute name="VALUE" x="177.8" y="91.694" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY13" gate="G$1" x="15.24" y="165.1" smashed="yes">
+<attribute name="VALUE" x="15.24" y="167.894" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY14" gate="VDD" x="7.62" y="165.1" smashed="yes">
+<attribute name="VALUE" x="7.62" y="167.894" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY15" gate="VDD" x="236.22" y="91.44" smashed="yes">
+<attribute name="VALUE" x="236.22" y="94.234" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -20564,26 +20620,6 @@ enable SPI</text>
 <pinref part="J6" gate="J1" pin="1"/>
 </segment>
 </net>
-<net name="BACKUP" class="0">
-<segment>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="86.36" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="B1" gate="G$1" pin="+"/>
-<wire x1="175.26" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="86.36" x2="160.02" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="86.36" x2="177.8" y2="86.36" width="0.1524" layer="91"/>
-<junction x="175.26" y="86.36"/>
-<label x="177.8" y="86.36" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="160.02" y1="88.9" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
-<junction x="160.02" y="86.36"/>
-</segment>
-<segment>
-<wire x1="33.02" y1="160.02" x2="20.32" y2="160.02" width="0.1524" layer="91"/>
-<label x="20.32" y="160.02" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="U$2" gate="G$1" pin="V_BKCP"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
@@ -20757,18 +20793,6 @@ enable SPI</text>
 <label x="55.88" y="27.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="VCC_RF" class="0">
-<segment>
-<wire x1="33.02" y1="149.86" x2="20.32" y2="149.86" width="0.1524" layer="91"/>
-<label x="20.32" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$2" gate="G$1" pin="VCC_RF"/>
-</segment>
-<segment>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="233.68" y1="86.36" x2="231.14" y2="86.36" width="0.1524" layer="91"/>
-<label x="233.68" y="86.36" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="ANT_VCC" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
@@ -20874,6 +20898,42 @@ enable SPI</text>
 <wire x1="137.16" y1="152.4" x2="137.16" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="154.94" x2="142.24" y2="154.94" width="0.1524" layer="91"/>
 <label x="142.24" y="154.94" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="V_BATT" class="0">
+<segment>
+<pinref part="SUPPLY13" gate="G$1" pin="V_BATT"/>
+<wire x1="15.24" y1="165.1" x2="15.24" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="160.02" x2="15.24" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="V_BKCP"/>
+</segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="86.36" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="B1" gate="G$1" pin="+"/>
+<wire x1="175.26" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="86.36" x2="160.02" y2="83.82" width="0.1524" layer="91"/>
+<junction x="175.26" y="86.36"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="88.9" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+<junction x="160.02" y="86.36"/>
+<pinref part="SUPPLY12" gate="G$1" pin="V_BATT"/>
+<wire x1="177.8" y1="88.9" x2="177.8" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="86.36" x2="175.26" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VDD" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="VCC_RF"/>
+<wire x1="33.02" y1="149.86" x2="7.62" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="SUPPLY14" gate="VDD" pin="VDD"/>
+<wire x1="7.62" y1="149.86" x2="7.62" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="231.14" y1="86.36" x2="236.22" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="SUPPLY15" gate="VDD" pin="VDD"/>
+<wire x1="236.22" y1="86.36" x2="236.22" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
