@@ -1,41 +1,23 @@
-SparkFun <PRODUCT NAME>
+SparkFun GPS Dead Reckoning Breakout - NEO-M8U (Qwiic)
 ========================================
 
-![SparkFun Part Name](URL for picture of part)
+![SparkFun GPS Dead Reckoning Breakout - NEO-M8U (Qwiic)](URL for picture of part)
 
-[*SparkFun Part Name (SKU)*](URL for product on Sparkfun.com)
+[SparkFun GPS Dead Reckoning Breakout - NEO-M8U (Qwiic)](URL for product on Sparkfun.com)
 
 <Basic description of the part.>
 
 Repository Contents
 -------------------
 
-* **/Documentation** - Data sheets, additional product information
-* **/Enclosure** - Enclosure files 
-* **/Firmware** - Example code 
+* **/Documentation** - Data sheets for the NEO-M8U
 * **/Hardware** - Eagle design files (.brd, .sch)
-* **/Libraries** - Libraries for use with the <PRODUCT NAME>
 * **/Production** - Production panel files (.brd)
-* **/Software** - Related software for the <PRODUCT NAME>
 
 Documentation
 --------------
-* **[Library](GitHub library URL)** - <LANGUAGE> library for the <PRODUCT NAME>.
-* **[Hookup Guide](Learn.SparkFun URL)** - Basic hookup guide for the <PRODUCT NAME>.
-* **[SparkFun Fritzing repo](https://github.com/sparkfun/Fritzing_Parts)** - Fritzing diagrams for SparkFun products.
-* **[SparkFun 3D Model repo](https://github.com/sparkfun/3D_Models)** - 3D models of SparkFun products. 
-* **[SparkFun Graphical Datasheets](https://github.com/sparkfun/Graphical_Datasheets)** -Graphical Datasheets for various SparkFun products.
-
-Product Versions
-----------------
-* [Part SKU](part URL)- Basic part and short description here
-* [Retail part SKU](retail URL)- Retail packaging of standard description here
-* [Any other parts this repo covers](any other URLs) - Description of said parts
-
-Version History
----------------
-* [vExxFxxZxxHxxLxxSxx](URL for tag specific to this version) - Description 
-* [vEyyFyyZyyHyyLyySyy](URL for tag specific to this version) - Description
+* **[Library](https://github.com/sparkfun/SparkFun_Ublox_Arduino_Library)** - Arduino Library the SparkFun GPS ublox products.
+* **[Hookup Guide](https://learn.sparkfun.com/tutorials/sparkfun-gps-neo-m9n-hookup-guide)** - Basic hookup guide for the SparkFun GPS NEO-M8U
 
 License Information
 -------------------
@@ -49,5 +31,3 @@ If you have any questions or concerns on licensing, please contact technical sup
 Distributed as-is; no warranty is given.
 
 - Your friends at SparkFun.
-
-_<COLLABORATION CREDIT>_
