@@ -6865,7 +6865,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="VALUE" x="6.604" y="22.8346" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
 <element name="U$11" library="board lables" package="SPI1" value="" x="30.607" y="11.684" smashed="yes" rot="MR0"/>
-<element name="U$14" library="SparkFun-Aesthetics" package="QWIIC_4MM" value="" x="2.54" y="20.4724" smashed="yes"/>
+<element name="U$14" library="SparkFun-Aesthetics" package="QWIIC_4MM" value="" x="2.159" y="20.4724" smashed="yes"/>
 <element name="U$12" library="LEDs" package="PPS0" value="" x="36.703" y="7.747" smashed="yes" rot="MR0"/>
 <element name="U$17" library="LEDs" package="PWR1" value="" x="36.957" y="13.716" smashed="yes" rot="MR0"/>
 <element name="U$25" library="ANT" package="ANT0" value="" x="34.671" y="20.066" smashed="yes" rot="R90"/>
@@ -7607,7 +7607,6 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <signal name="N$3">
 <contactref element="U1" pad="18"/>
 <contactref element="R8" pad="1"/>
-<wire x1="13.862" y1="15.983" x2="14.32" y2="15.983" width="0.1524" layer="1"/>
 <wire x1="14.32" y1="15.983" x2="12.846" y2="15.983" width="0.1524" layer="1"/>
 <wire x1="12.573" y1="16.256" x2="12.573" y2="18.161" width="0.1524" layer="1"/>
 <wire x1="12.846" y1="15.983" x2="12.573" y2="16.256" width="0.1524" layer="1"/>
@@ -7627,8 +7626,6 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="U1" pad="20"/>
 <contactref element="R10" pad="1"/>
 <wire x1="11.01" y1="15.7226" x2="11.0168" y2="15.7158" width="0.1524" layer="1"/>
-<wire x1="11.0168" y1="15.7158" x2="11.1116" y2="15.621" width="0.1524" layer="1"/>
-<wire x1="11.1116" y1="15.621" x2="11.176" y2="15.621" width="0.1524" layer="1"/>
 <wire x1="14.32" y1="13.783" x2="14.253" y2="13.716" width="0.1524" layer="1"/>
 <wire x1="11.938" y1="15.494" x2="11.684" y2="15.748" width="0.1524" layer="1"/>
 <wire x1="11.684" y1="15.748" x2="11.049" y2="15.748" width="0.1524" layer="1"/>
@@ -7698,7 +7695,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <approved hash="19,16,be9b071441dddaf0"/>
 <approved hash="19,16,3a10a4e9c3c27ddd"/>
 <approved hash="19,16,efa5669e419ceb01"/>
-<approved hash="3,16,cefe9b0e9b43ceb3"/>
+<approved hash="3,16,9c287e547db59fc9"/>
 </errors>
 </board>
 </drawing>
