@@ -20570,7 +20570,7 @@ enable SPI</text>
 <wire x1="195.58" y1="60.96" x2="248.92" y2="60.96" width="0.1524" layer="97" style="shortdash"/>
 <text x="104.14" y="177.8" size="2.54" layer="94" font="vector">USB Connector - Power</text>
 <text x="148.844" y="6.604" size="2.54" layer="94" font="vector">Based on design by: Nathan Seidle</text>
-<text x="38.1" y="170.18" size="1.27" layer="97" font="vector">VCC Range: 2.7 - 3.3V</text>
+<text x="38.1" y="170.18" size="1.27" layer="97" font="vector">VCC Range: 2.7 - 3.6V</text>
 <wire x1="43.18" y1="55.88" x2="43.18" y2="43.18" width="0.2032" layer="97" style="dashdot"/>
 <wire x1="48.26" y1="25.4" x2="48.26" y2="20.32" width="0.2032" layer="97" style="dashdot"/>
 <wire x1="48.26" y1="20.32" x2="43.18" y2="20.32" width="0.2032" layer="97" style="dashdot"/>
