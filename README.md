@@ -1,9 +1,9 @@
 SparkFun GPS Dead Reckoning Breakout - NEO-M8U (Qwiic)
 ========================================
 
-![SparkFun GPS Dead Reckoning Breakout - NEO-M8U (Qwiic)](URL for picture of part)
+[![SparkFun GPS Dead Reckoning Breakout - NEO-M8U (Qwiic)](URL for picture of part)](https://www.sparkfun.com/products/16329)
 
-[SparkFun GPS Dead Reckoning Breakout - NEO-M8U (Qwiic)](URL for product on Sparkfun.com)
+[SparkFun GPS Dead Reckoning Breakout - NEO-M8U (Qwiic) [GPS-16329]](https://www.sparkfun.com/products/16329)
 
 <Basic description of the part.>
 
@@ -17,7 +17,7 @@ Repository Contents
 Documentation
 --------------
 * **[Library](https://github.com/sparkfun/SparkFun_Ublox_Arduino_Library)** - Arduino Library the SparkFun GPS ublox products.
-* **[Hookup Guide](https://learn.sparkfun.com/tutorials/sparkfun-gps-neo-m9n-hookup-guide)** - Basic hookup guide for the SparkFun GPS NEO-M8U
+* **[Hookup Guide](https://learn.sparkfun.com/tutorials/1166)** - Basic hookup guide for the SparkFun GPS NEO-M8U
 
 License Information
 -------------------
