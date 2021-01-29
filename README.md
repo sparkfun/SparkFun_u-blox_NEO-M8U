@@ -27,7 +27,7 @@ Repository Contents
 
 Documentation
 --------------
-* **[Library](https://github.com/sparkfun/SparkFun_Ublox_Arduino_Library)** - Arduino Library the SparkFun GPS ublox products.
+* **[Library](https://github.com/sparkfun/SparkFun_u-blox_GNSS_Arduino_Library)** - Arduino Library the SparkFun GPS ublox products.
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/1166)** - Basic hookup guide for the SparkFun GPS NEO-M8U
 
 License Information
